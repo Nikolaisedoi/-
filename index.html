@@ -60,6 +60,7 @@
           </div>
           <!--first-line-->
           <hr />
+
           <!--NAVIGATION-->
 
           <nav class="header-menu">
@@ -91,7 +92,27 @@
         <button class="btn header-btn">подобрать тур</button>
         <div class="arrow">
           <a href="#">
-            <img src="img/arrow.svg" alt="" class="arrow-img" />
+            <svg
+              class="arrow-svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="transparent"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5 11.0001L20.5 28.6001"
+                stroke="white"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M14 22.6L20.5005 29L27 22.6"
+                stroke="white"
+                stroke-miterlimit="10"
+              />
+              <circle cx="20" cy="20" r="19.5" stroke="white" />
+            </svg>
+            <!-- <img src="img/arrow.svg" alt="" class="arrow-img" /> -->
           </a>
         </div>
       </div>
@@ -611,15 +632,147 @@
               rows="5"
             ></textarea>
           </fieldset>
-          <button class="form-btn">Отправить заявку</button>
-          <input class="checkbox" type="checkbox" name="a" required />
-          <a href="#" class="form-link"
-            >Согласие на обработку персональных данных</a
-          >
+          <div class="button-group">
+            <button class="form-btn">Отправить заявку</button>
+            <input class="checkbox" type="checkbox" name="a" required />
+            <a href="#" class="form-link"
+              >Согласие на обработку персональных данных</a
+            >
+          </div>
         </form>
       </div>
       <!-- /.container -->
     </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-menu">
+          <div class="footer-menu_wrap">
+            <h4 class="footer-menu_title">Бронирование</h4>
+            <ul class="footer__menu-items">
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Отели и базы отдыха</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Теплоходы и катера</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Транспортные услуги</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-menu_item -->
+          <div class="footer-menu_wrap">
+            <h4 class="footer-menu_title">Экскурсии</h4>
+            <ul class="footer__menu-items">
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Экскурсии и туры</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Экстрим туры</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-menu_item -->
+          <div class="footer-menu_wrap">
+            <h4 class="footer-menu_title">Туры на Байкал</h4>
+            <ul class="footer__menu-items">
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Туры Зима-Весна</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Туры Лето-Осень</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Туры охоты и рыбалки</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-menu_item -->
+          <div class="footer-menu_wrap">
+            <h4 class="footer-menu_title">О Байкале</h4>
+            <ul class="footer__menu-items">
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Карта Байкала</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Достопримечательности</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Полезная информация</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-menu_item -->
+          <div class="footer-menu_wrap">
+            <h4 class="footer-menu_title">О нас</h4>
+            <ul class="footer__menu-items">
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Контакты</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__menu-link" href="#">Агентствам</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-menu_item -->
+        </nav>
+        <span class="footer-line"></span>
+
+        <div class="footer-contacts_wrap">
+          <div class="footer-contacts">
+            <h4 class="footer-contacts_title">
+              Турагентство «Байкальский отдых»
+            </h4>
+            <ul class="footer-contacts_list">
+              <li class="footer-contacts_item">© 2021. Все права защищены</li>
+            </ul>
+          </div>
+          <!--footer-contacts-->
+          <div class="footer-contacts">
+            <h4 class="footer-contacts_title">Заказ туров и бронирование:</h4>
+            <ul class="footer-contacts_list">
+              <li class="footer-contacts_item">
+                <a href="#" class="footer-contacts_link"
+                  >тел. 8-924-3-541-540</a
+                >
+              </li>
+              <li class="footer-contacts_item">
+                <a href="#" class="footer-contacts_link">
+                  e-mail: baikalholiday@mail.ru</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--footer-contacts-->
+          <div class="footer-contacts">
+            <h4 class="footer-contacts_title">Адрес:</h4>
+            <ul class="footer-contacts_list">
+              <li class="footer-contacts_item">
+                г. Улан-Удэ, ул.Гражданская, 20,<br />
+                отель «Рестон», 1 этаж
+              </li>
+            </ul>
+          </div>
+          <!--footer-contacts-->
+          <div class="footer-contacts">
+            <a class="privacy-policy" href="#">Политика конфиденциальности</a>
+            <div class="footer-logo">
+              <span class="footer-logo_text">Дизайн</span>
+              <img
+                src="img/footer-logo.svg"
+                alt="logo: Студии дизайна"
+                class="footer-logo_img"
+              />
+            </div>
+          </div>
+          <!--footer-contacts-->
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
 
     <script
       type="text/javascript"
