@@ -17,7 +17,7 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="header">
+    <header class="header none">
       <div class="container">
         <div class="header-menu">
           <div class="first-line">
@@ -59,7 +59,7 @@
             <!--social-->
           </div>
           <!--first-line-->
-          <hr />
+          <!-- <hr /> -->
 
           <!--NAVIGATION-->
 
@@ -93,24 +93,24 @@
         <div class="arrow">
           <a href="#">
             <svg
-              class="arrow-svg"
               width="40"
               height="40"
               viewBox="0 0 40 40"
-              fill="transparent"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <circle cx="20" cy="20" r="19.5" stroke="white" />
               <path
-                d="M20.5 11.0001L20.5 28.6001"
+                d="M20.5 11L20.5 28.6"
                 stroke="white"
                 stroke-miterlimit="10"
               />
+
               <path
                 d="M14 22.6L20.5005 29L27 22.6"
                 stroke="white"
                 stroke-miterlimit="10"
               />
-              <circle cx="20" cy="20" r="19.5" stroke="white" />
             </svg>
             <!-- <img src="img/arrow.svg" alt="" class="arrow-img" /> -->
           </a>
@@ -120,7 +120,7 @@
     </header>
 
     <!-- section-tours-->
-    <section class="tours">
+    <section class="tours none">
       <div class="container">
         <div class="wrapper-tours">
           <div class="tours-item">
@@ -258,7 +258,7 @@
 
     <!-- activity -->
 
-    <section class="activity">
+    <section class="activity none">
       <div class="container">
         <h2 class="activity-title">Основные направления деятельности</h2>
         <div class="activity-wrapper">
@@ -363,24 +363,132 @@
       <div class="container">
         <h2 class="offers-title">Популярные предложения</h2>
         <div class="offer-wrapper">
-          <div class="box-item">
-            <div class="der">
-              <img
-                src="img/Зимний однодневный тур на Чивыркуйский залив 1.png"
-                alt=""
-                class="offer-img"
-              />
-              <div class="offer-item">
-                <p class="offer-text">
-                  Зимний однодневный тур на Чивыркуйский залив
-                </p>
-                <div class="gradient"></div>
-                <span class="offer-span">Cтоимость 4000 руб.</span>
+          <ul class="grid offer-list">
+            <li class="offer__list-items offer-items_1">
+              <div class="wrap-offer">
+                <a href="" class="offer-link">
+                  <div class="offer-content">
+                    <h3 class="offer-content_title">
+                      Зимний однодневный тур на Чивыркуйский залив
+                    </h3>
+                    <span class="offer-content_text">Cтоимость 4000 руб.</span>
+                  </div>
+                  <!--offer-content-->
+                </a>
               </div>
-              <!--offer-item-->
-            </div>
-          </div>
-          <!--box-item-->
+            </li>
+            <li class="offer__list-items offer-items_2">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Зимний однодневный тур на остров Ольхон
+                </h3>
+                <span class="offer-content_text">Cтоимость 5000 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items list-item_big offer-items_3">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Экскурсия в Иволгинский дацан
+                </h3>
+                <span class="offer-content_text"
+                  >Продолжительность 4 часа Cтоимость от 500 руб.</span
+                >
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_4">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Обзорная экскурсия по Улан-Удэ
+                </h3>
+                <span class="offer-content_text"
+                  >Продолжительность 3 часа Cтоимость от 500 руб.</span
+                >
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_5">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Эко-отель «Байкальское шале», с. Максимиха
+                </h3>
+                <span class="offer-content_text">Стоимость от 6500 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_6">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Летний однодневный тур в Чивыркуйский залив
+                </h3>
+                <span class="offer-content_text">Cтоимость 4000 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_7">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Отель «Белая Карета», с. Горячинск
+                </h3>
+                <span class="offer-content_text">Cтоимость от 3200 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_8">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Однодневная поездка на Байкал «Байкальская Гавань»
+                </h3>
+                <span class="offer-content_text">Стоимость от 1000 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_9">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Парк-отель «Сагаан-Морин», с. Сухая
+                </h3>
+                <span class="offer-content_text">Стоимость от 3500 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_10">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Летний однодневный тур на остров Ольхон
+                </h3>
+                <span class="offer-content_text">Стоимость 8500 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_11">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Парк-отель «Байкальская Ривьера», с. Гремячинск
+                </h3>
+                <span class="offer-content_text">Cтоимость от 3700 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_12">
+              <div class="offer-content">
+                <h3 class="offer-content_title">
+                  Зимний тур «Чивыркуйская сказка»
+                </h3>
+                <span class="offer-content_text">Стоимость 2000 руб.</span>
+              </div>
+              <!--offer-content-->
+            </li>
+            <li class="offer__list-items offer-items_13">
+              <div class="offer-content">
+                <h3 class="offer-content_title content-title_center">
+                  Показать все предложения
+                </h3>
+              </div>
+              <!--offer-content-->
+            </li>
+          </ul>
         </div>
         <!--offer-wrapper-->
       </div>
@@ -389,7 +497,7 @@
 
     <!-- map -->
 
-    <section class="map">
+    <section class="map none">
       <div class="container">
         <h2 class="map-title">Карта Байкала</h2>
         <iframe
@@ -406,7 +514,7 @@
 
     <!-- info -->
 
-    <section class="info">
+    <section class="info none">
       <div class="container">
         <div class="info-box">
           <div class="info-wrap">
@@ -434,7 +542,7 @@
 
     <!-- gallery -->
 
-    <section class="gallery">
+    <section class="gallery none">
       <div class="container">
         <div class="gallery-wrapper">
           <h2 class="gallery-title">Фотогалерея</h2>
@@ -478,7 +586,7 @@
 
     <!-- description -->
 
-    <section class="description">
+    <section class="description none">
       <div class="container">
         <h2 class="description-title">Байкальский отдых с нами – это легко!</h2>
         <div class="description-wrapper"></div>
@@ -556,7 +664,7 @@
 
     <!-- form -->
 
-    <section class="form">
+    <section class="form none">
       <div class="container">
         <h2 class="form-title">Забронируйте отдых на Байкале</h2>
         <form action="#" class="form-group">
@@ -646,7 +754,7 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+    <footer class="footer none">
       <div class="container">
         <nav class="footer-menu">
           <div class="footer-menu_wrap">
