@@ -1,0 +1,88 @@
+@media (max-width: 1020px) {
+  .social-mail {
+    display: none;
+  }
+  .header-title {
+    margin-top: 50px;
+  }
+  .header-btn {
+    margin-bottom: 130px;
+  }
+}
+@media (max-width: 785px) {
+  .social-phone {
+    display: none;
+  }
+  .header-title {
+    font-size: 60px;
+    width: 460px;
+  }
+}
+@media (max-width: 625px) {
+  .social-box {
+    display: none;
+  }
+  .menu-burger {
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    width: 32px;
+    height: 24px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+  .menu_burger-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .menu-list {
+    display: block;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    background: #4384d3;
+    z-index: 3;
+    padding: 35px 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+  }
+  .menu-list_active {
+    transform: translateY(0);
+  }
+  .list-item {
+    margin: 0;
+  }
+  .menu-link {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .header-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .header-text {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 455px) {
+  .header-title {
+    font-size: 30px;
+    width: 240px;
+    margin-bottom: 35px;
+  }
+  .header-text {
+    font-size: 16px;
+  }
+  .logo-title {
+    font-size: 14px;
+  }
+  .logo-text {
+    font-size: 14px;
+  }
+}
