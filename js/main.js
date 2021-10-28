@@ -36,8 +36,14 @@ $(document).ready(function(){
 
 
 // burger-menu
-	$('.menu-burger').on('click', function(){
-		$('.menu-list').toggleClass('menu-list_active');
+//header
+	$('.menu-burger-btn').on('click', function(e){
+		$('.menu-burger-btn, .menu-list').toggleClass('active');
+	});
+
+//footer
+	$('.button-burger_group').on('click', function(){
+		$('.footer_menu-burger-btn, .footer-menu_list').toggleClass('footer-menu_list-active');
 	});
 });
 

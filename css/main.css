@@ -131,11 +131,7 @@ a {
   justify-content: flex-start;
   padding: 0;
 }
-.menu-burger {
-  /* width: 0;
-  height: 0;
-  opacity: 0;
-  transform: translateY(-1000px); */
+.menu-burger-btn {
   display: none;
 }
 .list-item {
@@ -182,7 +178,7 @@ a {
   align-items: flex-end;
   position: absolute;
   left: calc(50% - 20px);
-  top: 90%;
+  top: 88%;
 }
 .arrow-down {
   width: 40px;
@@ -422,9 +418,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   position: relative;
 }
 .popup-link {
@@ -530,16 +523,11 @@ a {
   margin: 0;
 }
 .desc-info {
-  /* display: flex;
-  justify-content: space-around; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
   margin-top: 41px;
 }
-/* .desc-item {
-  margin-right: 40px;
-} */
 .desc-text {
   font-size: 20px;
   line-height: 130%;
@@ -582,6 +570,17 @@ a {
   border: none;
   border: 1px solid #d9d9de;
 }
+.input-form_date {
+  font-size: 16px;
+  line-height: 130%;
+  color: #76767a;
+  max-width: 256px;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border: 1px solid #d9d9de;
+}
 .input-form:not(:last-child) {
   margin-right: 32px;
 }
@@ -594,9 +593,8 @@ fieldset {
   font-size: 16px;
   line-height: 130%;
   color: #76767a;
-  max-width: 256px;
+  width: 256px;
   padding: 12px;
-  width: 100%;
   margin-bottom: 15px;
   border: none;
   border: 1px solid #d9d9de;
@@ -610,12 +608,12 @@ fieldset {
 .input-data {
   display: flex;
   flex-direction: column;
-  max-width: 153px;
+  width: 153px;
   margin-right: 40px;
 }
 .coment {
   max-width: 649px;
-  max-height: 112px;
+  max-height: 107px;
   width: 100%;
   padding: 11px 0 0 14px;
   border: 1px solid #d9d9de;
@@ -639,7 +637,7 @@ fieldset {
   margin-right: 140px;
 }
 .check-box {
-  width: 400px;
+  max-width: 400px;
   display: flex;
   align-items: center;
 }
@@ -692,6 +690,10 @@ fieldset {
   line-height: 130%;
   color: #ffffff;
   opacity: 0.8;
+}
+.menu-link_black:hover {
+  background-color: rgb(36, 8, 8);
+  z-index: 44;
 }
 .footer-line {
   opacity: 0.2;

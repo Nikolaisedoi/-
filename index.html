@@ -66,24 +66,24 @@
       <div class="container">
         <!--NAVIGATION-->
         <nav class="header-menu">
-          <button class="menu-burger">
-            <img class="menu_burger-img" src="img/menu-burger.svg" alt="иконка: burger">
-          </button>
+          <div class="menu-burger-btn">
+            <span></span>
+          </div>
           <ul class="menu-list">
             <li class="list-item">
-              <a class="menu-link" href="#">Бронирование</a>
+              <a class="menu-link" href="#form">Бронирование</a>
             </li>
             <li class="list-item">
-              <a class="menu-link" href="#">Экскурсии</a>
+              <a class="menu-link" href="#offers">Экскурсии</a>
             </li>
             <li class="list-item">
-              <a class="menu-link" href="#">Туры на Байкал</a>
+              <a class="menu-link" href="#tours">Туры на Байкал</a>
             </li>
             <li class="list-item">
-              <a class="menu-link" href="#">О Байкале</a>
+              <a class="menu-link" href="#info">О Байкале</a>
             </li>
             <li class="list-item">
-              <a class="menu-link" href="#">О нас</a>
+              <a class="menu-link" href="#description">О нас</a>
             </li>
           </ul>
         </nav>
@@ -114,7 +114,7 @@
     </header>
 
     <!-- section-tours-->
-    <section class="tours">
+    <section class="tours" id="tours">
       <div class="container">
         <!-- <div class="wrapper-tours"> -->
         <ul class="tours-list">
@@ -383,7 +383,7 @@
     </section>
 
     <!-- offers -->
-    <section class="offers">
+    <section class="offers" id="offers">
       <div class="container">
         <h2 class="offers-title">Популярные предложения</h2>
         <div class="offer-wrapper">
@@ -572,7 +572,7 @@
 
     <!-- info -->
 
-    <section class="info">
+    <section class="info" id="info">
       <div class="container">
         <div class="info-box">
           <div class="info-wrap">
@@ -676,7 +676,7 @@
 
     <!-- description -->
 
-    <section class="description">
+    <section class="description" id="description">
       <div class="container">
         <h2 class="description-title">Байкальский отдых с нами – это легко!</h2>
         <div class="description-box">
@@ -777,7 +777,7 @@
 
     <!-- form -->
 
-    <section class="form none">
+    <section class="form" id="form">
       <div class="container">
         <h2 class="form-title">Забронируйте отдых на Байкале</h2>
         <form action="#" class="form-group">
@@ -804,14 +804,14 @@
               required
             />
           </fieldset>
-          <fieldset>
-            <select class="form-select" required>
+          <fieldset class="fieldset-select">
+            <select class="form-select form-select_width100" required>
               <option value="">Местность Байкала</option>
               <option value="Ольхон">Ольхон</option>
               <option value="Листвянка">Листвянка</option>
               <option value="Чивыркуйский залив">Чивыркуйский залив</option>
             </select>
-            <select class="form-select" required>
+            <select class="form-select form-select_width50" required>
               <option value="">Количество взрослых</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -819,7 +819,7 @@
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-            <select class="form-select" required>
+            <select class="form-select form-select_width50" required>
               <option value="">Количество детей, их возраст</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -831,15 +831,15 @@
           <fieldset class="field">
             <div class="input-data">
               <input
-                class="input-form"
-                type="date"
+                class="input-form_date"
+                type="text"
                 name="text"
                 placeholder="Дата заезда"
                 required
               />
               <input
-                class="input-form"
-                type="date"
+                class="input-form_date"
+                type="text"
                 name="text"
                 placeholder="Дата отъезда"
                 required
@@ -868,7 +868,7 @@
 
     <!-- footer -->
 
-    <footer class="footer none">
+    <footer class="footer">
       <div class="container">
         <nav class="footer-menu">
           <div class="footer-menu_wrap">
@@ -941,6 +941,50 @@
           </div>
           <!-- /.footer-menu_item -->
         </nav>
+        <nav class="footer-menu_burger none">
+          <div class="button-burger_group">
+            <div class="footer_menu-burger-btn">
+              <span></span>
+            </div>
+            <span class="burger-text">меню</span>
+          </div>
+          <ul class="footer-menu_list">
+            <li class="list-item footer-list-item">
+              <a class="menu-link_black" href="#form">Бронирование</a>
+            </li>
+            <li class="list-item footer-list-item">
+              <a class="menu-link_black" href="#offers">Экскурсии</a>
+            </li>
+            <li class="list-item footer-list-item">
+              <a class="menu-link_black" href="#tours">Туры на Байкал</a>
+            </li>
+            <li class="list-item footer-list-item">
+              <a class="menu-link_black" href="#info">О Байкале</a>
+            </li>
+            <li class="list-item footer-list-item">
+              <a class="menu-link_black" href="#description">О нас</a>
+            </li>
+          </ul>
+          <div class="social-box">
+            <div class="social footer-social_phone">
+              <img
+              src="img/phone.svg"
+              alt="иконка phone"
+              class="logo-social"
+              />
+              <a href="tel:+79243541540" class="phone">8-924-3-541-540
+              </a>
+            </div>
+            <div class="social footer-social_mail">
+              <img src="img/mail.svg" alt="иконка mail.ru" class="logo-social" />
+              <a href="https://baikalholiday@mail.ru" target="_blank" class="mail"
+              >baikalholiday@mail.ru
+              </a>
+            </div>
+          </div>
+          <!--social-->
+        </nav>
+        
         <span class="footer-line"></span>
 
         <div class="footer-contacts_wrap">
